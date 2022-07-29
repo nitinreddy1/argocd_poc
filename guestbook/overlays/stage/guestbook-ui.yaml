@@ -3,11 +3,11 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 5
+  replicas: 2
   template:
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: gcr.io/heptio-images/ks-guestbook-demo:latest
         name: guestbook-ui
         ports:
         - containerPort: 8090
